@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+        extend: {
+          colors: {
+          'dark-blue': 'hsl(240, 100%, 5%)',
+          'gray': 'hsl(233, 8%, 79%)',
+          'orange': 'hsl(35, 77%, 62%)',
+          'red': 'hsl(5, 85%, 63%)',
+          'grayish-blue': 'hsl(236, 13%, 42%)',
+          'gray': '#c7c5c6'
+        }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+    <div class="flex justify-between items-center py-8 w-[90%] mx-auto xl:max-w-[1250px]">
+      <img src="/images//logo.svg" alt="brand logo">
+      <img src="/images/icon-menu.svg" alt="hamburger" class="lg:hidden">
+      <ul class="hidden space-x-10 lg:flex">
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col xl:flex-row mx-auto xl:space-x-7 xl:max-w-[1250px]">
+      <div class="flex flex-col w-[90%] mx-auto space-y-5 mb-12 xl:w-[75%] xl:space-y-0 xl:mb-0">
+        <img src="/images/image-web-3-mobile.jpg" alt="header picture" class="lg:hidden">
+        <img src="/images/image-web-3-desktop.jpg" alt="header picture" class="hidden lg:block">
+        <div class="flex flex-col space-y-5 xl:flex-row xl:space-y-0 xl:py-10 xl:space-x-10">
+          <h1 class="font-extrabold text-5xl text-dark-blue xl:w-1/2 lg:leading-tight">The Bright Future of Web 3.0?</h1>
+          <div class="space-y-5 xl:w-1/2">
+            <p class="text-gray leading-7">  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+              <button class="bg-red uppercase px-12 py-4 t text-white tracking-widest">Read More</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="flex flex-col w-[90%] mx-auto space-y-5 xl:w-[25%]">
+        <aside class="bg-dark-blue p-5 xl:p-8">
+          <h2 class="text-4xl text-orange font-bold">New</h2>
+          <div class="divide-y divide-white/90 space-y-5">
+            <div>
+              <h3 class="font-bold text-white text-xl mb-3 mt-7">Hydrogen VS Electric Cars</h3>
+              <p class="text-white/80">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-xl mb-3 mt-7">The Downsides of AI Artistry</h3>
+              <p class="text-white/80">What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-xl mb-3 mt-7">Is VC Funding Drying Up</h3>
+              <p class="text-white/80">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="flex flex-col w-[90%] mx-auto my-10 space-y-10 xl:max-w-[1250px] xl:flex-row xl:space-y-0 xl:space-x-10">
+      <div class="flex space-x-7 items-center">
+        <img src="/images/image-retro-pcs.jpg" alt="Retro PCs" class="h-[20vh] xl:h-[25vh]">
+        <div class="space-y-5">
+          <h2 class="text-4xl font-bold text-gray">01</h2>
+          <h3 class="font-bold text-xl">Reviving Retro PCs</h3>
+          <p class="leading-6 text-black/60">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="flex space-x-7 items-center">
+        <img src="/images/image-top-laptops.jpg" alt="Retro PCs" class="h-[20vh] xl:h-[25vh]">
+        <div class="space-y-5">
+          <h2 class="text-4xl font-bold text-gray">02</h2>
+          <h3 class="font-bold text-xl">Top 10 Laptops of 2022</h3>
+          <p class="leading-6 text-black/60">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="flex space-x-7 items-center">
+        <img src="/images/image-gaming-growth.jpg" alt="Retro PCs" class="h-[20vh] xl:h-[25vh]">
+        <div class="space-y-5">
+          <h2 class="text-4xl font-bold text-gray">03</h2>
+          <h3 class="font-bold text-xl">The Growth of Gaming</h3>
+          <p class="leading-6 text-black/60">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
